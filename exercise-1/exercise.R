@@ -11,7 +11,7 @@ point.allowed <- c(10, 9, 18, 17)
 
 # Combine your two vectors into a dataframe
 
-comebine <- data.frame(point, point.allowed)
+combine <- data.frame(point, point.allowed)
 
 # Create a new column "diff" that is the difference in points
 
@@ -19,7 +19,7 @@ combine$diff <- combine$point - combine$point.allowed
 
 # Create a new column "won" which is TRUE if the Seahawks wom
 
-comebine$won <- combine$diff >0
+combine$won <- combine$diff > 0
 
 # Create a vector of the opponents
 
@@ -27,4 +27,4 @@ opponent <- c('Dolphins', 'Rams', '49ers', 'Jets')
 
 # Assign your dataframe rownames of their opponents
 
-rownames(comebine) <- opponent
+rownames(combine) <- opponent
