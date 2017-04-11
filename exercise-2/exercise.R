@@ -34,9 +34,10 @@ nrow(salaries[salaries$got.raise == TRUE,])
 
 # What was the value of the highest raise?
 
-
+max(salaries$raise)
 
 # What was the name of the employee who recieved the highest raise?
+
 
 
 # What was the largest decrease in salaries between the two years?
